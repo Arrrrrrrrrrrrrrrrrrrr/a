@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <style>
+        button {
+            padding: 20px 36px;
+            background-color: lightsteelblue;
+            border: none;
+            color: steelblue;
+            border-radius: 100px;
+        }
+        
+        .text {
+            color: blue;	
+            font-size: 24px;
+            width: 500px;
+        }
+        
+        .new {
+            color: red;
+            font-size: 30px;
+            width: 600px;
+        }
+        
+        img {
+            width: 400px;
+        }
+        
+        .container {
+            display: none;
+        }
+        
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet soluta accusamus, itaque doloremque laboriosam excepturi doloribus! Voluptatum voluptatem delectus odit commodi voluptate, reprehenderit ea tenetur rem culpa, nemo facilis harum!
+    </p>
+    <h1>Hello</h1>
+    <button>моя кнопка</button>
+    <div class="container">
+        Солнце состоит преимущественно из гелия и водорода, и не имеет твёрдой поверхности. Солнце вращается вокруг своей оси, причём слои звёздного вещества на экваторе вращаются почти на треть быстрее, чем слои в полярных областях. У Солнца, как и у любой звезды,
+        есть своя атмосфера.
+        <img src="https://cdn.fishki.net/upload/post/2020/09/28/3431890/tn/394ca3f33ae0e5ea5ca849132bf4b900.jpg" alt="" />
+    </div>
+</body>
+<script src="./jquery-3.5.1.min.js"></script>
+<script>
+    alert($('.text').text())
+
+    function changeColor() {
+        $('h1').css('color', 'red')
+    }
+
+    setTimeout(changeColor, 2000)
+
+    $('button, .text').on('mouseover', function() {
+        $('.text').toggleClass('new')
+        $('.container').toggleClass('show')
+    })
+</script>
+
+</html>

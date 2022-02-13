@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .list {
+            height: 300px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        
+        .item {
+            padding: 60px;
+            border: 1px solid orange;
+            background-color: pink;
+            font-size: 24px;
+            height: 150px;
+            width: 50%;
+        }
+        
+        .item-2 {
+            padding: 60px;
+            border: 1px solid orange;
+            background-color: green;
+            font-size: 24px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <!--<img src="https://habrastorage.org/webt/zb/7p/ks/zb7pksbln4quexonunaotjfkztg.png" alt="" /> -->
+    </div>
+</body>
+
+</html>

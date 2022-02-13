@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фон, прозрачность и градиент</title>
+    <link rel="icon" href="./webpage.svg" />
+    <style>
+        .container {
+            width: 1000px;
+            height: 600px;
+            border: 6px solid red;
+            margin: 60px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Johnrogershousemay2020.webp/1200px-Johnrogershousemay2020.webp.png');
+            /* background-repeat: no-repeat; */
+            /* background-position: top right; */
+            background-size: cover;
+        }
+        
+        .box {
+            background: linear-gradient(100deg, rgba(0, 0, 0, 0), green);
+            width: 100%;
+            height: 100%;
+            color: white;
+        }
+        
+        img {
+            height: 50%;
+        }
+        /* .container-2 {
+            height: 10000px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="./webpage.svg" alt="" />
+        </div>
+    </div>
+
+    <!-- <div class="container-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloremque esse dolor laboriosam provident, vel quod doloribus magnam quas. Dolore pariatur reiciendis rem vel voluptatibus, quia recusandae esse est numquam?
+    </div> -->
+</body>
+
+</html>
